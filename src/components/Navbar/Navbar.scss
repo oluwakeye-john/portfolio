@@ -26,6 +26,10 @@
 //  }
 //}
 
+.navigation-wrapper {
+  margin-bottom: 57px;
+}
+
 .navbar {
   background-color: white;
   opacity: 0.98;
@@ -97,4 +101,8 @@
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-active {
+  font-weight: bold;
 }

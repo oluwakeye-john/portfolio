@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
 import Navbar from "./Navbar/Navbar"
 
@@ -26,16 +25,9 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            {/*<Header siteTitle={data.site.siteMetadata.title} />*/}
             <Navbar />
-            <div
-                style={{
-                    margin: `0 auto`,
-                    maxWidth: 960,
-                    padding: `0 1.0875rem 1.45rem`,
-                }}
-            >
-                <main style={{marginTop: "57px"}}>{children}</main>
+            <div className="container-fluid">
+                <main>{children}</main>
                 <footer>
                     © {new Date().getFullYear()}, Built with
                     {` `}

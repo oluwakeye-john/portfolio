@@ -8,7 +8,7 @@ const Sidebar = ({isMenuOpen, isOpen, menuItems}) => (
         {
             menuItems.map((item, index) => (
                 <div  key={index} >
-                    <Link style={{color: "white"}} className="menu-item"to={item.url}>{item.name}</Link>
+                    <Link activeClassName='menu-active' style={{color: "white"}} className="menu-item"to={item.url}>{item.name}</Link>
                     <hr />
                 </div>
             ))
@@ -31,11 +31,11 @@ class Navbar extends Component{
         },
         {
             name: "About",
-            url : '/'
+            url : '/about'
         },
         {
             name: "Contact",
-            url : '/'
+            url : '/contact '
         }
     ]
 
@@ -55,7 +55,7 @@ class Navbar extends Component{
 
     render() {
         return (
-            <div >
+            <div className="navigation-wrapper">
                 <Sidebar menuItems={this.menuItems} isMenuOpen={this.isMenuOpen} isOpen={this.state.menuOpen}  />
                 <nav className="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
                     <div className="container">
