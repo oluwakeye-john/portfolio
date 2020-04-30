@@ -68,7 +68,7 @@ class Navbar extends Component{
                             <ul className="navbar-nav ml-auto"  data-toggle="collapse" data-target=".navbar-collapse.show">
                                 {
                                     this.menuItems.map((item, index) => (
-                                        <Link className="nav-link" key={index} to={item.url}>{item.name}</Link>
+                                        <Link activeClassName='menu-active' className="nav-link" key={index} to={item.url}>{item.name}</Link>
                                     ))
                                 }
                             </ul>
