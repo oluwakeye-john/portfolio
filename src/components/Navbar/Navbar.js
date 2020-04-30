@@ -31,8 +31,7 @@ class Navbar extends Component{
         },
         {
             name: "About",
-            url : '/' +
-                ''
+            url : '/'
         },
         {
             name: "Contact",
@@ -58,7 +57,7 @@ class Navbar extends Component{
         return (
             <div >
                 <Sidebar menuItems={this.menuItems} isMenuOpen={this.isMenuOpen} isOpen={this.state.menuOpen}  />
-                <nav className="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+                <nav className="navbar navbar-expand-lg navbar-light shadow-sm st">
                     <div className="container">
                         <Link to='/' className="navbar-brand">Gatsby</Link>
                         <span className="navbar-toggler" onClick={this.toggleMenuOpen} style={{border: "0"}}>
