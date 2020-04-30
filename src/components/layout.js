@@ -28,7 +28,6 @@ const Layout = ({ children }) => {
         <>
             {/*<Header siteTitle={data.site.siteMetadata.title} />*/}
             <Navbar />
-            <br /><br /><br />
             <div
                 style={{
                     margin: `0 auto`,
@@ -36,7 +35,7 @@ const Layout = ({ children }) => {
                     padding: `0 1.0875rem 1.45rem`,
                 }}
             >
-                <main>{children}</main>
+                <main style={{marginTop: "57px"}}>{children}</main>
                 <footer>
                     © {new Date().getFullYear()}, Built with
                     {` `}

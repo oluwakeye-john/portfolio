@@ -4,7 +4,7 @@ import {Link} from 'gatsby'
 import { slide as Menu } from "react-burger-menu"
 
 const Sidebar = ({isMenuOpen, isOpen, menuItems}) => (
-    <Menu width={250} onStateChange={isMenuOpen} disableAutoFocus right customBurgerIcon={false} isOpen={isOpen}>
+    <Menu width={250} onStateChange={isMenuOpen} disableAutoFocus right customCrossIcon={false} customBurgerIcon={false} isOpen={isOpen}>
         {
             menuItems.map((item, index) => (
                 <div  key={index} >
@@ -57,7 +57,7 @@ class Navbar extends Component{
         return (
             <div >
                 <Sidebar menuItems={this.menuItems} isMenuOpen={this.isMenuOpen} isOpen={this.state.menuOpen}  />
-                <nav className="navbar navbar-expand-lg navbar-light shadow-sm st">
+                <nav className="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
                     <div className="container">
                         <Link to='/' className="navbar-brand">Gatsby</Link>
                         <span className="navbar-toggler" onClick={this.toggleMenuOpen} style={{border: "0"}}>
