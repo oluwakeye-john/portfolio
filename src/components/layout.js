@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Navbar />
+            <Navbar title={data.site.siteMetadata.title} />
             <div className="container-fluid">
                 <main>{children}</main>
                 <footer>

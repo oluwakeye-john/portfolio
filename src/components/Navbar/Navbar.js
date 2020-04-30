@@ -59,7 +59,7 @@ class Navbar extends Component{
                 <Sidebar menuItems={this.menuItems} isMenuOpen={this.isMenuOpen} isOpen={this.state.menuOpen}  />
                 <nav className="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
                     <div className="container">
-                        <Link to='/' className="navbar-brand">Gatsby</Link>
+                        <Link to='/' className="navbar-brand">{this.props.title}</Link>
                         <span className="navbar-toggler" onClick={this.toggleMenuOpen} style={{border: "0"}}>
                             <span className="navbar-toggler-icon"> </span>
                         </span>
