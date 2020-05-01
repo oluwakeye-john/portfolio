@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import './Navbar.scss'
+import './Navigation.scss'
 import {Link} from 'gatsby'
 import { slide as Menu } from "react-burger-menu"
 
@@ -8,7 +8,9 @@ const Sidebar = ({isMenuOpen, isOpen, menuItems}) => (
         {
             menuItems.map((item, index) => (
                 <div  key={index} >
-                    <Link activeClassName='menu-active' style={{color: "white"}} className="menu-item"to={item.url}>{item.name}</Link>
+                    <Link activeClassName='menu-active' style={{color: "white"}} className="menu-item" to={item.url}>
+                        <span className={item.icon}> </span> {item.name}
+                    </Link>
                     <hr />
                 </div>
             ))
@@ -16,28 +18,13 @@ const Sidebar = ({isMenuOpen, isOpen, menuItems}) => (
     </Menu>
 )
 
-class Navbar extends Component{
+class Navigation extends Component{
     constructor(props) {
         super(props)
         this.state = {
             menuOpen: false
         }
     }
-
-    menuItems = [
-        {
-            name: "Home",
-            url : '/'
-        },
-        {
-            name: "About",
-            url : '/about'
-        },
-        {
-            name: "Contact",
-            url : '/contact '
-        }
-    ]
 
     toggleMenuOpen = () => {
         this.setState({
@@ -56,19 +43,21 @@ class Navbar extends Component{
     render() {
         return (
             <div className="navigation-wrapper">
-                <Sidebar menuItems={this.menuItems} isMenuOpen={this.isMenuOpen} isOpen={this.state.menuOpen}  />
-                <nav className="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+                <Sidebar menuItems={this.props.menuItems} isMenuOpen={this.isMenuOpen} isOpen={this.state.menuOpen}  />
+                <nav className="navbar navbar-expand-lg navbar-light  fixed-top" style={{backgroundColor: this.props.backgroundColor || "white"}}>
                     <div className="container">
-                        <Link to='/' className="navbar-brand">{this.props.title}</Link>
-                        <span className="navbar-toggler" onClick={this.toggleMenuOpen} style={{border: "0"}}>
+                        <Link to='/' style={{color: this.props.color || "black"}} className="navbar-brand">{this.props.title}</Link>
+                        <button className="navbar-toggler" onClick={this.toggleMenuOpen} style={{border: "0"}}>
                             <span className="navbar-toggler-icon"> </span>
-                        </span>
+                        </button>
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto"  data-toggle="collapse" data-target=".navbar-collapse.show">
                                 {
-                                    this.menuItems.map((item, index) => (
-                                        <Link activeClassName='menu-active' className="nav-link" key={index} to={item.url}>{item.name}</Link>
+                                    this.props.menuItems.map((item, index) => (
+                                        <Link style={{color: this.props.color || "black"}} key={index} activeClassName='menu-active' className="nav-link" to={item.url}>
+                                            <span className={item.icon}> </span> {item.name}
+                                        </Link>
                                     ))
                                 }
                             </ul>
@@ -80,4 +69,4 @@ class Navbar extends Component{
     }
 }
 
-export default Navbar
+export default Navigation

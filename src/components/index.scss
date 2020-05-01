@@ -1,0 +1,38 @@
+.mainIntro {
+  background-color: white;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  color: white;
+}
+
+.main-heading {
+  color: black;
+  //font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Roboto;
+}
+
+.main-subheading {
+  color: gray;
+}
+
+.hireButton {
+  background-color: #6C63FF;
+  padding: 8px 40px;
+  color: white;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.hireButton:hover{
+  box-shadow: 0 0 5px #6C63FF;
+}
+
+.ftt {
+  padding: 28rem 0 4rem 0;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1960px) {
+    padding: 14rem 0 4rem;
+  }
+}
