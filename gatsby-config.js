@@ -8,6 +8,14 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
         {
+            resolve: 'gatsby-plugin-web-font-loader',
+            options: {
+                google: {
+                    families: ['Dancing Script', 'Droid Sans' ]
+                }
+            }
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,

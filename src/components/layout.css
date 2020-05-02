@@ -1,7 +1,9 @@
 html {
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
-  font-family: "Open Sans", cursive;
+  /*font-family: "Dancing Script";*/
+  font-family: "Droid Sans";
 }

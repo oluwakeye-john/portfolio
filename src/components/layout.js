@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
 import Navigation from "./Navigation/Navigation"
+import Footer from "./Navigation/Footer"
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
         },
         {
             name: "Contact",
-            url : '/contact '
+            url : '#contactSection '
         }
     ]
 
@@ -37,11 +38,7 @@ const Layout = ({ children }) => {
             <div className="">
                 <div style={{height: "55px"}}> </div>
                 <main>{children}</main>
-                <footer>
-                    © {new Date().getFullYear()}, Built with
-                    {` `}
-                    <a href="https://www.gatsbyjs.org">Gatsby</a>
-                </footer>
+                <Footer />
             </div>
         </div>
     )
