@@ -1,3 +1,5 @@
+@import "variables";
+
 html {
   font-family: sans-serif;
   scroll-behavior: smooth;
@@ -5,5 +7,8 @@ html {
 body {
   margin: 0;
   /*font-family: "Dancing Script";*/
+  /*font-family: "Droid Sans";*/
   font-family: "Droid Sans";
+  font-size: 16px;
+  background-color: $background-color;
 }

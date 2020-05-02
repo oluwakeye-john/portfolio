@@ -2,9 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import "./layout.css"
+import "./layout.scss"
 import Navigation from "./Navigation/Navigation"
 import Footer from "./Navigation/Footer"
+import FixedButtons from "./FixedButtons/FixedButtons"
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -19,8 +20,8 @@ const Layout = ({ children }) => {
 
     const menuItems = [
         {
-            name: "About",
-            url : '/'
+            name: "Services",
+            url : '#serviceSection'
         },
         {
             name: "Project",
@@ -40,6 +41,7 @@ const Layout = ({ children }) => {
                 <main>{children}</main>
                 <Footer />
             </div>
+            <FixedButtons />
         </div>
     )
 }

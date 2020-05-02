@@ -5,7 +5,8 @@ import React from "react"
 import './Landing.scss'
 
 import Im1 from "../../images/overlay.svg"
-import Im2 from "../../images/dev.svg"
+import Im2 from "../../images/portfolio1_no_bg.svg"
+import HireButton from "../HireButton/HireButton"
 
 const Landing = () => (
     <div className="mainIntro" style={{backgroundImage: `url(${Im1})`}}>
@@ -17,18 +18,18 @@ const Landing = () => (
                     </Anim>
                     <br />
                     <Anim>
-                        <h4 className="main-subheading" >I'm John and I'm a JAMStack developer</h4>
+                        <h4 className="main-subheading" >I'm John and I'm a Full-Stack Web developer</h4>
                     </Anim>
                     <br /><br />
                     <Bounce>
-                        <button className="btn rounded-pill hireButton" >Hire Me</button>
+                        <HireButton />
                     </Bounce>
                     <br /><br />
                 </div>
                 <div className="col-lg-7" >
                     <div className="container">
                         <Rotate>
-                            <img alt="dev logo" src={Im2}/>
+                            <img alt="dev logo" src={Im2} className="img-fluid"/>
                         </Rotate>
                     </div>
                 </div>

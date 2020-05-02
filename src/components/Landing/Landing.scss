@@ -1,3 +1,5 @@
+@import "../variables";
+
 .mainIntro {
   padding-top: 15vh;
   padding-bottom: 10vh;
@@ -9,23 +11,12 @@
 }
 
 .main-heading {
-  color: black;
+  color: $heading1-color;
   font-family: "Droid Sans";
   font-size: 48px;
 }
 
 .main-subheading {
-  color: gray;
+  color: $heading2-color;
   font-size: 30px;
-}
-
-.hireButton {
-  background-color: #6C63FF;
-  padding: 8px 40px;
-  color: white;
-  transition: box-shadow .3s ease-in-out;
-}
-
-.hireButton:hover{
-  box-shadow: 0 0 5px #6C63FF;
 }

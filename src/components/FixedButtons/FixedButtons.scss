@@ -1,0 +1,20 @@
+@import "../variables";
+
+.scroll-up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: $primary-color;
+  padding: 10px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.scroll-up-button:hover{
+  box-shadow: 0 0 5px $primary-color;
+  color: white;
+}
