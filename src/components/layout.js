@@ -24,8 +24,8 @@ const Layout = ({ children }) => {
             url : '#serviceSection'
         },
         {
-            name: "Project",
-            url : '/about'
+            name: "Projects",
+            url : '#projectSection'
         },
         {
             name: "Contact",
