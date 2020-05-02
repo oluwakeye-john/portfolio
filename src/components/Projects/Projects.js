@@ -5,7 +5,7 @@ import HireButton from "../HireButton/HireButton"
 const projects = [
     {
         name: "Blog",
-        description: "This is a blog",
+        description: "My personal blog built with react js and gatsby",
         url: "https://google.com"
     },
     {
