@@ -30,12 +30,17 @@ const Layout = ({ children }) => {
         {
             name: "Contact",
             url : '#contactSection '
+        },
+        {
+            name: "Blog",
+            url : 'https://google.com'
         }
     ]
 
     return (
         <div>
-            <Navigation title={data.site.siteMetadata.title} menuItems={menuItems} />
+            {/*<Navigation title={data.site.siteMetadata.titletitle} menuItems={menuItems} />*/}
+            <Navigation title={`John`} menuItems={menuItems} />
             <div className="">
                 <div style={{height: "55px"}}> </div>
                 <main>{children}</main>

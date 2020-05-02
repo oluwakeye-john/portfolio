@@ -5,16 +5,20 @@ import SEO from "../components/seo"
 import Landing from "../components/Landing/Landing"
 import Contact from "../components/Contact/Contact"
 import Service from "../components/Service/Service"
+import Project from "../components/Projects/Projects"
 
-const IndexPage = ({ data }) => (
+const IndexPage = ()  => (
     <Layout>
         <SEO title="Home" />
         <Landing />
-        <br />
+        <div className="container-fluid">
+        <hr /><br />
         <Service />
-        <br /><br />
+        <hr /><br />
+        <Project />
+        <hr /><br />
         <Contact />
-
+        </div>
     </Layout>
 )
 

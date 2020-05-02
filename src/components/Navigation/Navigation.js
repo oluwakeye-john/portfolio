@@ -8,9 +8,16 @@ const Sidebar = ({isMenuOpen, isOpen, menuItems}) => (
         {
             menuItems.map((item, index) => (
                 <div  key={index} >
-                    <Link activeClassName='menu-active' style={{color: "white"}} className="menu-item" to={item.url}>
-                        <span className={item.icon}> </span> {item.name}
-                    </Link>
+                    {
+                        item.url.includes('http')
+                            ? <a href={item.url} style={{color: "white"}} className="menu-item" to={item.url}>
+                                <span className={item.icon}> </span> {item.name}
+                            </a>
+                            : <Link activeClassName='menu-active' style={{color: "white"}} className="menu-item" to={item.url}>
+                                <span className={item.icon}> </span> {item.name}
+                            </Link>
+
+                    }
                     <hr />
                 </div>
             ))
@@ -55,9 +62,17 @@ class Navigation extends Component{
                             <ul className="navbar-nav ml-auto"  data-toggle="collapse" data-target=".navbar-collapse.show">
                                 {
                                     this.props.menuItems.map((item, index) => (
-                                        <Link style={{color: this.props.color || "black"}} key={index} activeClassName='menu-active' className="nav-link" to={item.url}>
-                                            <span className={item.icon}> </span> {item.name}
-                                        </Link>
+                                        <div key={index}>
+                                            {
+                                                item.url.includes('http')
+                                                    ? <a href={item.url} style={{color: this.props.color || "black"}}  className="nav-link" to={item.url}>
+                                                        <span className={item.icon}> </span> {item.name}
+                                                    </a>
+                                                    : <Link style={{color: this.props.color || "black"}} key={index} activeClassName='menu-active' className="nav-link" to={item.url}>
+                                                        <span className={item.icon}> </span> {item.name}
+                                                    </Link>
+                                            }
+                                        </div>
                                     ))
                                 }
                             </ul>
