@@ -2,12 +2,12 @@ import React from "react"
 import '../components/index.scss'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Intro from "../components/intro"
+import Landing from "../components/Landing/Landing"
 
 const IndexPage = ({ data }) => (
     <Layout>
         <SEO title="Home" />
-        <Intro />
+        <Landing />
         <br /><br /><br />
     </Layout>
 )

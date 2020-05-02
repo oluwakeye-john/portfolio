@@ -1,14 +1,14 @@
 import Anim from "react-reveal/Zoom"
 import Bounce from "react-reveal/Bounce"
-import Rotate from "react-reveal/Rotate"
-import Image from "./image"
+import Rotate from "react-reveal/Reveal"
 import React from "react"
-import './intro.scss'
+import './Landing.scss'
 
-import Im1 from "../images/overlay.svg"
+import Im1 from "../../images/overlay.svg"
+import Im2 from "../../images/dev.svg"
 
-const Intro = () => (
-    <div className="mainIntro" >
+const Landing = () => (
+    <div className="mainIntro" style={{backgroundImage: `url(${Im1})`}}>
         <div className="container">
             <div className="row" >
                 <div className="col-lg-5">
@@ -25,8 +25,12 @@ const Intro = () => (
                     </Bounce>
                     <br /><br />
                 </div>
-                <div className="col-lg-7">
-                    <Image />
+                <div className="col-lg-7" >
+                    <div className="container">
+                        <Rotate>
+                            <img alt="dev logo" src={Im2}/>
+                        </Rotate>
+                    </div>
                 </div>
             </div>
             <br /><br />
@@ -34,4 +38,4 @@ const Intro = () => (
     </div>
 )
 
-export default Intro
+export default Landing

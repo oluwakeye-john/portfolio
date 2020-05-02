@@ -1,18 +1,22 @@
 .mainIntro {
-  background-color: ghostwhite;
   padding-top: 15vh;
   padding-bottom: 10vh;
   color: white;
+
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 
 .main-heading {
   color: black;
-  //font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-family: Roboto;
+  font-family: "Open Sans", cursive;
+  font-size: 48px;
 }
 
 .main-subheading {
   color: gray;
+  font-size: 33px;
 }
 
 .hireButton {
