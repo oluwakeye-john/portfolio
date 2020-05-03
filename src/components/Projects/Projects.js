@@ -15,13 +15,13 @@ const projects = [
     },
     {
         name: "Face Scout",
-        description: "A face detection website built with Clarifai API",
+        description: "A face detection web app built with Clarifai API, react and gatsbyjs",
         url: "https://facescout.netlify.com"
     },
 
     {
         name: "Giving Hilfe",
-        description: "A charity website integrated with stripe payment platform",
+        description: "A charity website integrated with Square payment platform",
         url: "https://givinghilfe.org"
     }
 ]

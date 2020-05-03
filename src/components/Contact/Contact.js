@@ -11,7 +11,7 @@ const Contact = () => (
 
                 </div>
                 <div className="col-lg-6">
-                    <form data-netlify="true" name="contact" method="POST">
+                    <form name="contact" method="POST" data-netlify="true">
                         <div>
                             <label htmlFor="name">
                                 Name*
