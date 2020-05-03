@@ -13,11 +13,10 @@ const About = () => (
                 <br /><br />
                 <img src={Me} className="img-fluid rounded about-image" />
                 <br /><br />
-                <h4>Who's this guy?</h4>
-
-
-                <p style={{padding: "20px", lineHeight: "30px"}}>
-                    I'm a full stack developer and I currently reside in Ibadan, Nigeria.
+                <h4 className="text-muted">Who's this guy?</h4>
+                <br />
+                <p style={{padding: "10px 0", lineHeight: "30px"}}>
+                    I'm a Full Stack developer and I currently reside in Ibadan, Nigeria.
                     <br />
                     I have serious passion for fast, dynamic and intuitive websites.
                     <br />

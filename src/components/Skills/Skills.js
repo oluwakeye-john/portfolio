@@ -6,7 +6,7 @@ import TextInlineAlign from "../TextInlineAlign"
 const skills = [
     {
         name: "HTML",
-        percentage: 100
+        percentage: 90
     },
     {
         name: "CSS",
@@ -18,7 +18,7 @@ const skills = [
     },
     {
         name: "React",
-        percentage: 70
+        percentage: 85
     },
     {
         name: "NodeJS",

@@ -20,7 +20,7 @@ const Landing = () => (
                     <Anim>
                         <div>
                         <h1 className="main-subheading" >I'm Oluwakeye John</h1>
-                        <h1 className="main-subheading">I'm a Full-Stack Web developer</h1>
+                        <h1 className="main-subheading">I'm a Full Stack Web developer</h1>
                         </div>
                         </Anim>
                     <br /><br />
