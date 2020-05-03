@@ -7,21 +7,23 @@ import Contact from "../components/Contact/Contact"
 import Service from "../components/Service/Service"
 import Project from "../components/Projects/Projects"
 import About from "../components/About/About"
+import Skills from "../components/Skills/Skills"
 
 const IndexPage = ()  => (
     <Layout>
-            <SEO title="Home" />
-            <Landing />
-            <div className="container-fluid">
-                    <hr /><br />
-                    <About />
-                    <hr /><br />
-                    <Service />
-                    <hr /><br />
-                    <Project />
-                    <hr /><br />
-                    <Contact />
-            </div>
+        <SEO title="Home" />
+        <Landing />
+        <div className="container-fluid">
+            <hr /><br />
+            <About />
+            <hr /><br />
+
+            <Service />
+            <hr /><br />
+            <Project />
+            <hr /><br />
+            <Contact />
+        </div>
     </Layout>
 )
 

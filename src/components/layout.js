@@ -20,8 +20,8 @@ const Layout = ({ children }) => {
 
     const menuItems = [
         {
-            name: "Services",
-            url : '#serviceSection'
+            name: "About",
+            url : '#aboutSection'
         },
         {
             name: "Projects",
@@ -30,10 +30,6 @@ const Layout = ({ children }) => {
         {
             name: "Contact",
             url : '#contactSection '
-        },
-        {
-            name: "Blog",
-            url : 'https://google.com'
         }
     ]
 
