@@ -18,7 +18,8 @@ const Landing = () => (
                     </Anim>
                     <br />
                     <Anim>
-                        <h4 className="main-subheading" >I'm John and I'm a Full-Stack Web developer</h4>
+                        <h1 className="main-subheading" >I'm Oluwakeye John</h1>
+                        <h1 className="main-subheading">I'm a Full-Stack Web developer</h1>
                     </Anim>
                     <br /><br />
                     <Bounce>

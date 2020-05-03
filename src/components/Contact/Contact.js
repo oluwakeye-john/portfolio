@@ -11,7 +11,7 @@ const Contact = () => (
 
                 </div>
                 <div className="col-lg-6">
-                    <form onSubmit={(e) => e.preventDefault() } >
+                    <form data-netlify="true" name="contact" method="POST" data-netlify-recaptcha="true">
                         <div>
                             <label htmlFor="name">
                                 Name*

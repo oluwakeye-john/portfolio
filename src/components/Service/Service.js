@@ -9,9 +9,9 @@ const Service = () => (
         <div className="row">
             <div className="col-lg-4 mb-5">
                 <div className="serviceMain">
-                    <span className="fas fa-mobile fa-3x serviceIcon"> </span>
+                    <span className="fas fa-palette fa-3x serviceIcon"> </span>
                     <br /><br />
-                    <h4 className="text-center">Mobile Friendly</h4>
+                    <h4 className="text-center">UI/UX Design</h4>
                     <br />
                     <p>
                         A responsive design makes your website accessible to all users, regardless of their device
@@ -20,7 +20,7 @@ const Service = () => (
             </div>
             <div className="col-lg-4 mb-5">
                 <div className="serviceMain">
-                    <span className="fas fa-draw-polygon fa-3x serviceIcon"> </span>
+                    <span className="fas fa-desktop fa-3x serviceIcon"> </span>
                     <br /><br />
                     <h4 className="text-center">Web Development</h4>
                     <br />

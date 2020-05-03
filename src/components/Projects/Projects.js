@@ -6,23 +6,23 @@ const projects = [
     {
         name: "Blog",
         description: "My personal blog built with react js and gatsby",
-        url: "https://google.com"
+        url: "https://adoring-mccarthy-84acce.netlify.com"
     },
     {
         name: "Viz Movies",
-        description: "This is a blog",
-        url: "https://google.com"
+        description: "A movie database website built with react.",
+        url: "https://vizmovies.netlify.com"
     },
     {
         name: "Face Scout",
-        description: "This is a blog",
-        url: "https://google.com"
+        description: "A face detection website built with Clarifai API",
+        url: "https://facescout.netlify.com"
     },
 
     {
         name: "Giving Hilfe",
-        description: "This is a blog",
-        url: "https://google.com"
+        description: "A charity website integrated with stripe payment platform",
+        url: "https://givinghilfe.org"
     }
 ]
 
@@ -41,7 +41,7 @@ const Project = () => {
                                     <h4>{project.name}</h4>
                                     <br />
                                     <p>{project.description}</p>
-                                    <button className="btn visit-button btn-sm">Visit Site</button>
+                                    <a href={project.url} target="_blank" className="btn visit-button btn-sm">Visit Site</a>
                                 </div>
                             </div>
                         </Reveal>
