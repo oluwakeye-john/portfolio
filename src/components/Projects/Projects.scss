@@ -1,17 +1,18 @@
 @import "../variables";
-.preview-button {
+.visit-button {
   background-color: $primary-color;
   color: white;
 }
 
-.visit-button {
+.preview-button {
   background-color: white;
   color: $primary-color;
   border: 1px solid $primary-color;
 }
 
 .project-cards {
-  border: 1px solid #6C757D;
+  //border: 1px solid #6C757D;
+  border: 1px solid $primary-color;
   padding: 20px;
   border-radius: 10px;
 }
