@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React  from "react"
 import Progress from 'react-progressbar';
 import Reveal from "react-reveal/Zoom"
 import TextInlineAlign from "../TextInlineAlign"

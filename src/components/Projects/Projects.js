@@ -41,7 +41,7 @@ const Project = () => {
                                     <h4>{project.name}</h4>
                                     <br />
                                     <p>{project.description}</p>
-                                    <a href={project.url} target="_blank" className="btn visit-button btn-sm">Visit Site</a>
+                                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn visit-button btn-sm">Visit Site</a>
                                 </div>
                             </div>
                         </Reveal>

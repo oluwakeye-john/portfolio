@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.scss"
 import Navigation from "./Navigation/Navigation"
@@ -8,15 +7,15 @@ import Footer from "./Navigation/Footer"
 import FixedButtons from "./FixedButtons/FixedButtons"
 
 const Layout = ({ children }) => {
-    const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  //   const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
     const menuItems = [
         {
@@ -35,8 +34,8 @@ const Layout = ({ children }) => {
 
     return (
         <div>
-            {/*<Navigation title={data.site.siteMetadata.titletitle} menuItems={menuItems} />*/}
-            <Navigation title={`John`} menuItems={menuItems} />
+            <Navigation title="John" menuItems={menuItems} />
+            {/*<Navigation title={`John`} menuItems={menuItems} />*/}
             <div className="">
                 <div style={{height: "55px"}}> </div>
                 <main>{children}</main>

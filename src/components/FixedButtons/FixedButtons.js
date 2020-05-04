@@ -27,7 +27,7 @@ class FixedButtons extends Component {
     render() {
         return (
             <div>
-                <a href="#" className="scroll-up-button" style={{opacity: this.state.scrolled ? 1 : 0}}>
+                <a href="#top" className="scroll-up-button" style={{opacity: this.state.scrolled ? 1 : 0}}>
                     <span className="fas fa-chevron-up"> </span>
                 </a>
             </div>
