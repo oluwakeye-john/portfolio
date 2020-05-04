@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: `Oluwakeye John`,
-        description: `Oluwakeye John is a fullstack web developer which currently resides in Ibadan, Nigeria.`,
+        description: `Oluwakeye John is a full stack web developer which currently resides in Ibadan, Nigeria.`,
         author: `@oluwakeyejohn`,
         social: {
             twitter: "oluwakeyejohn",
@@ -12,14 +12,6 @@ module.exports = {
     plugins: [
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
-        {
-            resolve: 'gatsby-plugin-web-font-loader',
-            options: {
-                google: {
-                    families: ['Dancing Script', 'Droid Sans' ]
-                }
-            }
-        },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -38,7 +30,7 @@ module.exports = {
                 background_color: `#6C63FF`,
                 theme_color: `#6C63FF`,
                 display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                icon: `src/images/john-icon.png`, // This path is relative to the root of the site.
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality
