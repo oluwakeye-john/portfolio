@@ -6,7 +6,7 @@ import Zoom from "react-reveal/Zoom"
 const services = [
     {
         name: "Fast",
-        icon: "fa-",
+        icon: "fa-bolt",
         description: "Fast load times and lag free interaction, my highest priority."
     },
     {
