@@ -1,6 +1,5 @@
 import React from "react"
 import Me from '../../images/john3.jpg'
-import HireButton from "../HireButton/HireButton"
 import './About.scss'
 import Skills from "../Skills/Skills"
 
@@ -11,7 +10,7 @@ const About = () => (
         <div className="row">
             <div className="col-lg-6">
                 <br /><br />
-                <img src={Me} className="img-fluid rounded about-image" />
+                <img alt="me" src={Me} className="img-fluid rounded about-image" />
                 <br /><br />
                 <h4 className="text-muted">Who's this guy?</h4>
                 <br />

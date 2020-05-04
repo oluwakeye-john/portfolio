@@ -6,17 +6,17 @@ import Zoom from "react-reveal/Zoom"
 const services = [
     {
         name: "Fast",
-        icon: "fa-desktop",
+        icon: "fa-",
         description: "Fast load times and lag free interaction, my highest priority."
     },
     {
         name: "Responsive",
-        icon: "fa-palette",
+        icon: "fa-mobile",
         description: "My layouts will work on any device, big or small"
     },
     {
         name: "Intuitive",
-        icon: "fa-palette",
+        icon: "fa-laptop",
         description: "Strong preference for easy to use, intuitive UX/UI."
     },
     {
