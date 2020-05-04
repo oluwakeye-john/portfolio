@@ -7,7 +7,6 @@ import Contact from "../components/Contact/Contact"
 import Service from "../components/Service/Service"
 import Project from "../components/Projects/Projects"
 import About from "../components/About/About"
-import Skills from "../components/Skills/Skills"
 
 const IndexPage = ()  => (
     <Layout>
@@ -17,7 +16,6 @@ const IndexPage = ()  => (
             <hr /><br />
             <About />
             <hr /><br />
-
             <Service />
             <hr /><br />
             <Project />
