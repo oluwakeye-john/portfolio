@@ -16,12 +16,12 @@ const services = [
     },
     {
         name: "Intuitive",
-        icon: "fa-laptop",
+        icon: "fa-palette",
         description: "Strong preference for easy to use, intuitive UX/UI."
     },
     {
         name: "Dynamic",
-        icon: "fa-desktop",
+        icon: "fa-plane-departure",
         description: "Websites don't have to be static, I love making pages come to life."
     },
 ]
@@ -38,7 +38,7 @@ const Service = () => (
                             <div className="serviceMain">
                                 <span className={`fas ${service.icon} fa-3x serviceIcon`}> </span>
                                 <br /><br />
-                                <h4 className="text-center">{service.name}</h4>
+                                <h4 className="text-center text-muted">{service.name}</h4>
                                 <br />
                                 <p>{service.description}</p>
                             </div>

@@ -38,7 +38,7 @@ const Project = () => {
                         <Reveal key={index}>
                             <div className="col-lg-6 mb-4">
                                 <div className="container project-cards">
-                                    <h4>{project.name}</h4>
+                                    <h4 className="text-muted">{project.name}</h4>
                                     <br />
                                     <p>{project.description}</p>
                                     <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn visit-button btn-sm">Visit Site</a>

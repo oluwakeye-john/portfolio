@@ -36,7 +36,7 @@ const Contact = () => (
                                 Message*
                             </label>
                             <br />
-                            <textarea rows={6} id="message" className="form-control" name="message" required> </textarea>
+                            <textarea rows={6} id="message" className="form-control" name="message" required/>
                         </div>
                         <br />
                         <input type="submit" className="btn" style={{backgroundColor: "#6C63FF", color: "white"}} />
