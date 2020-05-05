@@ -5,7 +5,9 @@ class Contact extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            name: ""
+            name: "",
+            email: "",
+            message: ""
         }
     }
 
@@ -26,10 +28,24 @@ class Contact extends Component {
             .catch(error => alert(error));
     }
 
-    onUpdateInput = (e) => {
+    onUpdateName = (e) => {
         console.log(e)
         this.setState({
             name: e.target.value
+        })
+    }
+
+    onUpdateEmail = (e) => {
+        console.log(e)
+        this.setState({
+            email: e.target.value
+        })
+    }
+
+    onUpdateMessage = (e) => {
+        console.log(e)
+        this.setState({
+            message: e.target.value
         })
     }
     render() {
@@ -51,7 +67,7 @@ class Contact extends Component {
                                         Name*
                                     </label>
                                     <br/>
-                                    <input onClick={this.onUpdateInput} type="text" id="email" className="form-control" name="name" required/>
+                                    <input onChange={this.onUpdateName} type="text" id="email" className="form-control" name="name" required/>
                                 </div>
                                 <br/>
 
@@ -60,7 +76,7 @@ class Contact extends Component {
                                         Email*
                                     </label>
                                     <br/>
-                                    <input type="email" id="email" className="form-control" name="email" required/>
+                                    <input onChange={this.onUpdateEmail} type="email" id="email" className="form-control" name="email" required/>
                                 </div>
                                 <br/>
 
@@ -69,7 +85,7 @@ class Contact extends Component {
                                         Message*
                                     </label>
                                     <br/>
-                                    <textarea rows={6} id="message" className="form-control" name="message" required/>
+                                    <textarea onChange={this.onUpdateMessage} rows={6} id="message" className="form-control" name="message" required/>
                                 </div>
                                 <br/>
                                 <input type="submit" className="btn"
