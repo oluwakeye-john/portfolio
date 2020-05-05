@@ -29,21 +29,21 @@ class Contact extends Component {
     }
 
     onUpdateName = (e) => {
-        console.log(e)
+        console.log(e.target.value)
         this.setState({
             name: e.target.value
         })
     }
 
     onUpdateEmail = (e) => {
-        console.log(e)
+        console.log(e.target.value)
         this.setState({
             email: e.target.value
         })
     }
 
     onUpdateMessage = (e) => {
-        console.log(e)
+        console.log(e.target.value)
         this.setState({
             message: e.target.value
         })
