@@ -5,6 +5,7 @@ import "./layout.scss"
 import Navigation from "./Navigation/Navigation"
 import Footer from "./Navigation/Footer"
 import FixedButtons from "./FixedButtons/FixedButtons"
+import ParticlesBg from './ParticlesBg/ParticlesBg'
 
 const Layout = ({ children }) => {
   //   const data = useStaticQuery(graphql`
@@ -40,6 +41,7 @@ const Layout = ({ children }) => {
         <div>
             <Navigation title="John" menuItems={menuItems} />
             {/*<Navigation title={`John`} menuItems={menuItems} />*/}
+            <ParticlesBg />
             <div className="">
                 <div style={{height: "70px"}}> </div>
                 <main>{children}</main>

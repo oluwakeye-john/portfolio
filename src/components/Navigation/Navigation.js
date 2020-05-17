@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import { stack as Menu } from "react-burger-menu"
 import SocialButtons from "../SocialButtons/SocialButtons"
 
+import Icon from '../../images/john-icon.png'
+
 
 // customCrossIcon={false}
 const Sidebar = ({ isMenuOpen, isOpen, menuItems }) => (
@@ -61,7 +63,9 @@ class Navigation extends Component {
                 <Sidebar menuItems={this.props.menuItems} isMenuOpen={this.isMenuOpen} isOpen={this.state.menuOpen} />
                 <nav className="navbar navbar-expand-lg navbar-light  fixed-top shadow-sm" style={{ backgroundColor: this.props.backgroundColor || "white" }}>
                     <div className="container">
-                        <Link to='/' style={{ color: this.props.color || "black" }} className="navbar-brand">{this.props.title}</Link>
+                        <Link to='/' style={{ color: this.props.color || "black" }} className="navbar-brand">
+                            <img  src={Icon} style={{width: "30px"}} />
+                            </Link>
                         <button className="navbar-toggler" onClick={this.toggleMenuOpen} style={{ border: "0" }}>
                             <span className="navbar-toggler-icon"> </span>
                         </button>

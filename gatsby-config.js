@@ -27,7 +27,7 @@ module.exports = {
                 name: `Oluwakeye John`,
                 short_name: `John`,
                 start_url: `/`,
-                background_color: `#6C63FF`,
+                background_color: `#FFFFFF`,
                 theme_color: `#6C63FF`,
                 display: `minimal-ui`,
                 icon: `src/images/john-icon.png`, // This path is relative to the root of the site.

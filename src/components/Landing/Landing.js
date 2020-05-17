@@ -5,7 +5,7 @@ import React from "react"
 import './Landing.scss'
 
 import Im1 from "../../images/overlay.svg"
-import Im2 from "../../images/portfolio1_no_bg.svg"
+import Im2 from "../../images/dev.svg"
 import HireButton from "../HireButton/HireButton"
 
 const Landing = () => (
@@ -44,7 +44,7 @@ const Landing = () => (
                     </div>
                 </div>
             </div>
-            <br /><br />
+            
         </div>
     </div>
 )

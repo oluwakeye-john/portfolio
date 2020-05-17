@@ -14,7 +14,7 @@ const skills = [
     },
     {
         name: "JavaScript",
-        percentage: 80
+        percentage: 90
     },
     {
         name: "React",
@@ -22,7 +22,7 @@ const skills = [
     },
     {
         name: "Gatsby",
-        percentage: 90
+        percentage: 80
     },
     {
         name: "NodeJS",
@@ -30,7 +30,7 @@ const skills = [
     },
     {
         name: "Django",
-        percentage: 70
+        percentage: 75
     }
 ]
 
