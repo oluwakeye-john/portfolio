@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import './Navigation.scss'
 import { Link } from 'gatsby'
 import { stack as Menu } from "react-burger-menu"
+import SocialButtons from "../SocialButtons/SocialButtons"
 
 
 // customCrossIcon={false}
@@ -25,6 +26,10 @@ const Sidebar = ({ isMenuOpen, isOpen, menuItems }) => (
                 </div>
             ))
         }
+        <div className="text-center">
+        <SocialButtons size="small" />
+        </div>
+        
     </Menu>
 )
 

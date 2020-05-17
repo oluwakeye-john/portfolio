@@ -11,7 +11,8 @@ const Footer = () => (
                 <div className="col-lg-4 text-center">
                     <h4>Oluwakeye John</h4>
                     <br />
-                    © {new Date().getFullYear()}, Built with
+                    © {new Date().getFullYear()}
+                    , Built with
                     {` `}
                     <a href="https://www.gatsbyjs.org">Gatsby</a>
                     <br />

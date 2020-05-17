@@ -1,5 +1,4 @@
 import Anim from "react-reveal/Zoom"
-import Bounce from "react-reveal/Bounce"
 import Rubber from "react-reveal/Shake"
 import Rotate from "react-reveal/Reveal"
 import React from "react"
@@ -33,9 +32,8 @@ const Landing = () => (
                         </div>
                     </Rotate>
                     <br /><br />
-                    <Bounce>
-                        <HireButton />
-                    </Bounce>
+
+                    <HireButton />
                     <br /><br />
                 </div>
                 <div className="col-lg-7" >
