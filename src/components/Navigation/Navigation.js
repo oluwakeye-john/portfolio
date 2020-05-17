@@ -10,6 +10,9 @@ import Icon from '../../images/john-icon.png'
 // customCrossIcon={false}
 const Sidebar = ({ isMenuOpen, isOpen, menuItems }) => (
     <Menu width={`100%`} onStateChange={isMenuOpen} disableAutoFocus right customBurgerIcon={false} isOpen={isOpen}>
+        <Link to='/' onClick={() => isMenuOpen(false)}>
+            <img src={Icon} style={{ width: "30px" }} />
+        </Link>
         {
             menuItems.map((item, index) => (
                 <div key={index} className="text-center" >
@@ -29,9 +32,9 @@ const Sidebar = ({ isMenuOpen, isOpen, menuItems }) => (
             ))
         }
         <div className="text-center">
-        <SocialButtons size="small" />
+            <SocialButtons size="small" />
         </div>
-        
+
     </Menu>
 )
 
@@ -64,8 +67,8 @@ class Navigation extends Component {
                 <nav className="navbar navbar-expand-lg navbar-light  fixed-top shadow-sm" style={{ backgroundColor: this.props.backgroundColor || "white" }}>
                     <div className="container">
                         <Link to='/' style={{ color: this.props.color || "black" }} className="navbar-brand">
-                            <img  src={Icon} style={{width: "30px"}} />
-                            </Link>
+                            <img src={Icon} style={{ width: "30px" }} />
+                        </Link>
                         <button className="navbar-toggler" onClick={this.toggleMenuOpen} style={{ border: "0" }}>
                             <span className="navbar-toggler-icon"> </span>
                         </button>
@@ -87,6 +90,9 @@ class Navigation extends Component {
                                         </div>
                                     ))
                                 }
+                                {/* <div className="nav-link ml-5">
+                                    <SocialButtons size="small" />
+                                </div> */}
                             </ul>
                         </div>
                     </div>

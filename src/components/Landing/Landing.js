@@ -27,8 +27,8 @@ const Landing = () => (
 
                     <Rotate>
                         <div>
-                            <h1 className="main-subheading" >I'm Oluwakeye John</h1>
-                            <h1 className="main-subheading">I'm a Full Stack Web developer</h1>
+                            <h2 className="main-subheading" >I'm Oluwakeye John</h2>
+                            <h2 className="main-subheading">I'm a Full Stack Web developer</h2>
                         </div>
                     </Rotate>
                     <br /><br />

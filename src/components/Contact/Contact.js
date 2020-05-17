@@ -5,7 +5,11 @@ class Contact extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            fetching: false
+            fetching: false,
+            fetch_result: {
+                color: "black",
+                msg: ""
+            }
         }
     }
 
@@ -38,15 +42,31 @@ class Contact extends Component {
             })
         })
             .then(() => {
-                alert("Your message has been submitted!")
                 this.setState({
-                    fetching: false
+                    fetching: false,
+                    fetch_result: {
+                        color: "green",
+                        msg: "Success"
+                    }
                 })
             })
             .catch(error => {
-                alert("An error occurred while submitting your form while submitting your message. Please try again")
+                this.setState({
+                    fetch_result: {
+                        color: "red",
+                        msg: "Error"
+                    }
+                })
                 console.log(error)
             });
+            setTimeout(() => {
+                this.setState({
+                    fetch_result: {
+                        color: "black",
+                        msg: ""
+                    }
+                })
+            }, 3000)
     }
 
 
@@ -98,6 +118,13 @@ class Contact extends Component {
                                         <span className="ml-1 spinner-border spinner-border-sm" />
                                     }
                                 </button>
+
+                                <span className="ml-2">
+                                    <span style={{ color: this.state.fetch_result.color }}>
+                                        {this.state.fetch_result.msg}
+                                    </span>
+                                </span>
+
                             </form>
                         </div>
                     </div>
