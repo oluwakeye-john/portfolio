@@ -28,7 +28,7 @@ const services = [
 
 const Service = () => (
     <div className="container text-center" id="serviceSection">
-        <h3 className="text-muted">Services</h3>
+        <h3 className="">Services</h3>
         <br />
         <div className="row">
             {
@@ -38,7 +38,7 @@ const Service = () => (
                             <div className="serviceMain">
                                 <span className={`fas ${service.icon} fa-3x serviceIcon`}> </span>
                                 <br /><br />
-                                <h4 className="text-center text-muted">{service.name}</h4>
+                                <h4 className="text-center">{service.name}</h4>
                                 <br />
                                 <p>{service.description}</p>
                             </div>
@@ -48,6 +48,7 @@ const Service = () => (
             }
         </div>
         <HireButton />
+        <br /><br />
     </div>
 )
 

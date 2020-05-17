@@ -7,7 +7,7 @@ import Image from 'gatsby-image'
 const About = () => {
     const data = useStaticQuery(graphql`
     {
-            file(relativePath: { eq: "john3.jpg" }) {
+            file(relativePath: { eq: "john1.jpeg" }) {
                 childImageSharp {
                     # Specify the image processing specifications right in the query.
                     # Makes it trivial to update as your page's design changes.
@@ -22,14 +22,14 @@ const About = () => {
 
     return (
         <div className="container text-center about-outer-wrapper" id="aboutSection">
-            <h3 className="text-muted">About Myself</h3>
+            <h3 className="">About</h3>
             <br/>
             <div className="row">
                 <div className="col-lg-6">
                     <br/><br/>
                     <Image fluid={data.file.childImageSharp.fluid} alt="Oluwakeye John"  className="img-fluid rounded about-image"/>
                     <br/><br/>
-                    <h4 className="text-muted">Who's this guy?</h4>
+                    <h4 className="">Who's this guy?</h4>
                     <br/>
                     <p style={{ padding: "10px 0", lineHeight: "30px" }}>
                         I'm a Full Stack developer and I currently reside in Ibadan, Nigeria.

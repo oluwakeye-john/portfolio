@@ -21,6 +21,10 @@ const skills = [
         percentage: 85
     },
     {
+        name: "Gatsby",
+        percentage: 90
+    },
+    {
         name: "NodeJS",
         percentage: 70
     },
@@ -40,7 +44,6 @@ class Skills extends React.Component {
                             <Reveal>
                                 <TextInlineAlign left={skill.name} right={`${skill.percentage}%`} />
                                 <div style={{border: "1px solid grey", padding: "3px", borderRadius: "4px"}}>
-                                    {/*<Progress color="grey" completed={skill.percentage}/>*/}
                                     <Progress color="grey" completed={skill.percentage}/>
                                 </div>
                                 <br />

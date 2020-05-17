@@ -19,6 +19,10 @@ const Layout = ({ children }) => {
 
     const menuItems = [
         {
+            name: "Home",
+            url : '#'
+        },
+        {
             name: "About",
             url : '#aboutSection'
         },
@@ -37,7 +41,7 @@ const Layout = ({ children }) => {
             <Navigation title="John" menuItems={menuItems} />
             {/*<Navigation title={`John`} menuItems={menuItems} />*/}
             <div className="">
-                <div style={{height: "55px"}}> </div>
+                <div style={{height: "70px"}}> </div>
                 <main>{children}</main>
                 <Footer />
             </div>

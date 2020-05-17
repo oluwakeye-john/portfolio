@@ -6,6 +6,7 @@ import SocialButtons from "../SocialButtons/SocialButtons"
 const Footer = () => (
     <footer className="" style={{backgroundImage: `url(${FooterSVG})`}}>
         <div className="container">
+            
             <div className="row">
                 <div className="col-lg-4 text-center">
                     <h4>Oluwakeye John</h4>

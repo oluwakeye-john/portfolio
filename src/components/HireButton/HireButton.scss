@@ -4,10 +4,11 @@
   background-color: $primary-color;
   padding: 8px 40px;
   color: white;
-  transition: box-shadow .3s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 
 .hireButton:hover{
-  box-shadow: 0 0 5px $primary-color;
+  transform: scale(1.1);
+  // box-shadow: 0 0 5px $primary-color;
   color: white;
 }

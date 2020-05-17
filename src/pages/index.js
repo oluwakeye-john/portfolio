@@ -12,7 +12,7 @@ const IndexPage = ()  => (
     <Layout>
         <SEO title="Home" />
         <Landing />
-        <div className="container-fluid">
+        <div className="container">
             <hr /><br />
             <About />
             <hr /><br />
