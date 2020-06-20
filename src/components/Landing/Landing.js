@@ -9,6 +9,7 @@ import Im2 from "../../images/dev.svg"
 import HireButton from "../HireButton/HireButton"
 
 import Imm from "../../images/john1.jpeg"
+import SocialButtons from "../SocialButtons/SocialButtons"
 
 const Landing = () => (
   <div className="mainIntro" style={{ backgroundImage: `url(${Im1})` }}>
@@ -33,6 +34,7 @@ const Landing = () => (
             </div>
           </Rotate>
           <br />
+          <SocialButtons size="small" />
           <br />
 
           <HireButton />

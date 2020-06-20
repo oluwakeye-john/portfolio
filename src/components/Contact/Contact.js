@@ -94,6 +94,7 @@ class Contact extends Component {
                     id="contact_name"
                     className="form-control input-border"
                     name="contact_name"
+                    placeholder="John Doe"
                     required
                   />
                 </div>
@@ -108,6 +109,7 @@ class Contact extends Component {
                     id="contact_email"
                     className="form-control input-border"
                     name="contact_email"
+                    placeholder="example@mail.com"
                     required
                   />
                 </div>
@@ -123,6 +125,7 @@ class Contact extends Component {
                     className="form-control input-border"
                     name="contact_message"
                     required
+                    placeholder="Enter Content Here"
                   />
                 </div>
                 <br />

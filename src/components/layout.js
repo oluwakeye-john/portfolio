@@ -5,7 +5,7 @@ import "./layout.scss"
 import Navigation from "./Navigation/Navigation"
 import Footer from "./Navigation/Footer"
 import FixedButtons from "./FixedButtons/FixedButtons"
-import ParticlesBg from './ParticlesBg/ParticlesBg'
+import ParticlesBg from "./ParticlesBg/ParticlesBg"
 
 const Layout = ({ children }) => {
   //   const data = useStaticQuery(graphql`
@@ -18,42 +18,42 @@ const Layout = ({ children }) => {
   //   }
   // `)
 
-    const menuItems = [
-        {
-            name: "Home",
-            url : '#'
-        },
-        {
-            name: "About",
-            url : '#aboutSection'
-        },
-        {
-            name: "Projects",
-            url : '#projectSection'
-        },
-        {
-            name: "Contact",
-            url : '#contactSection '
-        }
-    ]
+  const menuItems = [
+    {
+      name: "Home",
+      url: "#",
+    },
+    {
+      name: "About",
+      url: "#aboutSection",
+    },
+    {
+      name: "Projects",
+      url: "#projectSection",
+    },
+    {
+      name: "Contact",
+      url: "#contactSection ",
+    },
+  ]
 
-    return (
-        <div>
-            <Navigation title="John" menuItems={menuItems} />
-            {/*<Navigation title={`John`} menuItems={menuItems} />*/}
-            <ParticlesBg />
-            <div className="">
-                <div style={{height: "70px"}}> </div>
-                <main>{children}</main>
-                <Footer />
-            </div>
-            <FixedButtons />
-        </div>
-    )
+  return (
+    <div>
+      <Navigation title="John" menuItems={menuItems} />
+      {/*<Navigation title={`John`} menuItems={menuItems} />*/}
+      {/* <ParticlesBg /> */}
+      <div className="">
+        <div style={{ height: "70px" }}> </div>
+        <main>{children}</main>
+        <Footer />
+      </div>
+      <FixedButtons />
+    </div>
+  )
 }
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
