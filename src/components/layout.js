@@ -35,13 +35,17 @@ const Layout = ({ children }) => {
       name: "Contact",
       url: "#contactSection ",
     },
+    {
+      name: "Blog",
+      url: "https://oluwakeye-blog.netlify.app",
+    },
   ]
 
   return (
     <div>
       <Navigation title="John" menuItems={menuItems} />
       {/*<Navigation title={`John`} menuItems={menuItems} />*/}
-      {/* <ParticlesBg /> */}
+      <ParticlesBg />
       <div className="">
         <div style={{ height: "70px" }}> </div>
         <main>{children}</main>
