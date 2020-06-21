@@ -8,7 +8,6 @@ import Im1 from "../../images/overlay.svg"
 import Im2 from "../../images/dev.svg"
 import HireButton from "../HireButton/HireButton"
 
-import Imm from "../../images/john1.jpeg"
 import SocialButtons from "../SocialButtons/SocialButtons"
 
 const Landing = () => (
@@ -19,7 +18,9 @@ const Landing = () => (
           <>
             <h1 className="main-heading">
               <Rubber>
-                <div role="img">👋 Hi There!</div>
+                <div role="img">
+                  <div className="wave">👋 </div>Hi There!
+                </div>
               </Rubber>
             </h1>
           </>
