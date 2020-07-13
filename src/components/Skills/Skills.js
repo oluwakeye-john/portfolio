@@ -9,7 +9,7 @@ const skills = [
     percentage: 90,
   },
   {
-    name: "React",
+    name: "React/Redux",
     percentage: 85,
   },
   {
@@ -17,12 +17,16 @@ const skills = [
     percentage: 70,
   },
   {
-    name: "Django",
-    percentage: 65,
+    name: "Gatsby",
+    percentage: 75,
   },
   {
-    name: "Database",
+    name: "Socket io and Web RTC",
     percentage: 70,
+  },
+  {
+    name: "GraphQL",
+    percentage: 65,
   },
 ]
 

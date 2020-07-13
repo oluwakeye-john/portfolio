@@ -35,10 +35,6 @@ const Layout = ({ children }) => {
       name: "Contact",
       url: "#contactSection ",
     },
-    {
-      name: "Blog",
-      url: "https://oluwakeye-blog.netlify.app",
-    },
   ]
 
   return (

@@ -4,9 +4,9 @@ import Reveal from "react-reveal/Zoom"
 import HireButton from "../HireButton/HireButton"
 const projects = [
   {
-    name: "Blog",
-    description: "My personal blog built with react js and gatsby",
-    url: "https://oluwakeye-blog.netlify.com",
+    name: "Eaveswall",
+    description: "Eaveswall is a univeristy blogging platform.",
+    url: "https://eaveswall.com",
   },
   {
     name: "Ecommerce",
@@ -14,14 +14,15 @@ const projects = [
     url: "https://oluwakeye-ecommerce.netlify.com",
   },
   {
-    name: "Viz Movies",
-    description: "A movie database website built with react.",
-    url: "https://vizmovies.netlify.com",
+    name: "Chat App",
+    description: "A real-time chat app built with nodejs, socketio.",
+    url: "https://oluwakeye-chat.herokuapp.com",
   },
   {
-    name: "Giving Hilfe",
-    description: "A charity website integrated with Square payment platform",
-    url: "https://givinghilfe.org",
+    name: "Video Chat App",
+    description:
+      "A video chat application built with webRTC, socket.io and nodejs",
+    url: "https://lens-chat.netlify.app",
   },
 ]
 
